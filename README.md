@@ -5,8 +5,7 @@
 A lightweight pub-sub event delivery system built from scratch. Producers publish events to named topics; multiple subscribers receive them asynchronously with persistent queuing, priority-based scheduling, concurrent delivery workers with atomic message claiming, exponential backoff retry, and a dead letter queue for failed deliveries.
 
 **Live Demo**
-- Frontend: `https://axon-dashboard.vercel.app`
-- Backend API: `https://axon-backend.onrender.com/docs`
+-`https://axon-iota-six.vercel.app/`
 
 ---
 
