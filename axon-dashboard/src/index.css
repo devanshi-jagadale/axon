@@ -1,0 +1,52 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #080b0f;
+  --bg2:       #0d1117;
+  --bg3:       #111820;
+  --border:    #1e2d3d;
+  --cyan:      #00d4ff;
+  --cyan-dim:  #00d4ff33;
+  --green:     #00ff88;
+  --green-dim: #00ff8822;
+  --red:       #ff4466;
+  --red-dim:   #ff446622;
+  --yellow:    #ffbb00;
+  --yellow-dim:#ffbb0022;
+  --text:      #c9d8e8;
+  --text-dim:  #4a6070;
+  --mono:      'IBM Plex Mono', monospace;
+  --sans:      'IBM Plex Sans', sans-serif;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scan {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.animate-in { animation: fadeIn 0.4s ease forwards; }
